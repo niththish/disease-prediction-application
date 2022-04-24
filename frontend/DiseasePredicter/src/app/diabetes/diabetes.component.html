@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-6">
+
+            <div class="row align-items-center justify-content-center" id="section1">
+                <form class="row" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" novalidate>
+                    <p class="h5 text-center p-2 mb-4 bg-dark text-white">Diabetes Predicter</p>
+                    <div class="mb-4 col-6">
+                        <label for="glucose" class="form-label">Glucose Level</label>
+                        <input type="text" class="form-control" id="glucose" formControlName="glucose" placeholder="Glucose level in blood">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="insulin" class="form-label">Insulin Level</label>
+                        <input type="text" class="form-control" id="insulin" formControlName="insulin" placeholder="Insulin level in blood">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="bloodpressure" class="form-label">Blood Pressure</label>
+                        <input type="text" class="form-control" id="bloodpressure" formControlName="bloodpressure" placeholder="bloodpressure">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pregnancies" class="form-label">pregnancies</label>
+                        <input type="number" class="form-control" id="pregnancies" formControlName="pregnancies" placeholder="no of pregnancies" min="0" max="10">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="bmi" class="form-label">BMI</label>
+                        <input type="text" class="form-control" id="bmi" formControlName="bmi" placeholder="body mass index">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="diabetespedigreefunction" class="form-label">Diabetes Pedigree Function</label>
+                        <input type="text" class="form-control" id="diabetespedigreefunction" formControlName="diabetespedigreefunction" placeholder="Diabetes Pedigree Function">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="skinthickness" class="form-label">Skin Thickness</label>
+                        <input type="text" class="form-control" id="skinthickness" formControlName="skinthickness" placeholder="skin thickness">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="age" formControlName="age" placeholder="your age">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section2">
+                prediction results will be available soon
+            </div>
+        </div>
+
+    </div>
+</div>

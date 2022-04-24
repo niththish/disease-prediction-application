@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section1">
+                <form class="row" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" novalidate>
+
+                    <p class="h5 text-center p-2 mb-4 bg-dark text-white">Chronic Kidney Disease Predicter</p>
+                    <div class="mb-4 col-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="age" formControlName="age" placeholder="Enter your age">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="bp" class="form-label">Blood Pressure</label>
+                        <input type="text" class="form-control" id="bp" formControlName="bp" placeholder="Enter blood pressure level">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="sg" class="form-label">Specific Gravity</label>
+                        <input type="text" class="form-control" id="sg" formControlName="sg" placeholder="Enter urine sg level">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="amyloidosis" class="form-label">AL amyloidosis</label>
+                        <input type="text" class="form-control" id="amyloidosis" formControlName="amyloidosis" placeholder="Enter AL amyloidosis value">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="su" class="form-label">Surgical Procedures</label>
+                        <input type="number" class="form-control" id="su" formControlName="su" placeholder="undergoing surgical procedures" min="0" max="1">
+                    </div>
+
+                    <div class="mb-4 col-6">
+                        <label for="rbc" class="form-label">Red Blood Cells</label>
+                        <input type="text" class="form-control" id="rbc" formControlName="rbc" placeholder="Enter red blood cell count">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pc" class="form-label">Polycystic</label>
+                        <input type="number" class="form-control" id="sg" formControlName="sg" placeholder="Having Polycystic" min="0" max="1">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pcc" class="form-label">pheochromocytoma</label>
+                        <input type="number" class="form-control" id="pcc" formControlName="pcc" placeholder="Having pheochromocytoma" min="0" max="1">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="ba" class="form-label">BA</label>
+                        <input type="number" class="form-control" id="ba" formControlName="ba" placeholder="BA" min="0" max="1">
+                    </div>
+
+                
+                    <div class="mb-4 col-6">
+                        <label for="bgr" class="form-label">BGR</label>
+                        <input type="text" class="form-control" id="bgr" formControlName="bgr" placeholder="BGR">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="bu" class="form-label">BU</label>
+                        <input type="text" class="form-control" id="bu" formControlName="bu" placeholder="BU">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="sc" class="form-label">SC</label>
+                        <input type="text" class="form-control" id="sc" formControlName="sc" placeholder="SU">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="sod" class="form-label">SOD</label>
+                        <input type="text" class="form-control" id="sod" formControlName="sod" placeholder="SOD">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pot" class="form-label">POT</label>
+                        <input type="text" class="form-control" id="pot" formControlName="pot" placeholder="POT">
+                    </div>
+                    
+                    <div class="mb-4 col-6">
+                        <label for="hemo" class="form-label">HEMO</label>
+                        <input type="text" class="form-control" id="hemo" formControlName="hemo" placeholder="HEMO">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pcv" class="form-label">PCV</label>
+                        <input type="text" class="form-control" id="pcv" formControlName="pcv" placeholder="PCV">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="wc" class="form-label">WC</label>
+                        <input type="text" class="form-control" id="wc" formControlName="wc" placeholder="WC">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="rc" class="form-label">RC</label>
+                        <input type="text" class="form-control" id="rc" formControlName="rc" placeholder="RC">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="htn" class="form-label">HTN</label>
+                        <input type="text" class="form-control" id="htn" formControlName="htn" placeholder="HTN">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="dm" class="form-label">DM</label>
+                        <input type="text" class="form-control" id="dm" formControlName="dm" placeholder="DM">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="cad" class="form-label">CAD</label>
+                        <input type="text" class="form-control" id="cad" formControlName="cad" placeholder="CAD">
+                    </div>
+                    
+                    <div class="mb-4 col-6">
+                        <label for="appet" class="form-label">APPET</label>
+                        <input type="text" class="form-control" id="appet" formControlName="appet" placeholder="HTN">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="pe" class="form-label">PE</label>
+                        <input type="text" class="form-control" id="pe" formControlName="pe" placeholder="PE">
+                    </div>
+                    <div class="mb-4 col-6">
+                        <label for="ane" class="form-label">ANE</label>
+                        <input type="text" class="form-control" id="ane" formControlName="ane" placeholder="ANE">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section2">
+                prediction results will be available soon
+            </div>
+        </div>
+
+    </div>
+</div>

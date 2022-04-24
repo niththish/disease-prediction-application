@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section1">
+                
+                <form class="row" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" novalidate>
+                    <p class="h5 text-center p-2 mb-3 bg-dark text-white">Hepatits Predicter</p>
+                
+                    <div class="mb-3 col-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="age" formControlName="age" placeholder="your age">
+                    </div>
+                
+                    <div class="mb-4 col-6">
+                        <label class="form-check-label px-1" for="gender">Gender</label>
+                        <select class="form-select" name="gender" id="gender" formControlName="gender">
+                            <option selected>your gender</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3 col-6">
+                        <label for="alb" class="form-label">ALB</label>
+                        <input type="text" class="form-control" id="alb" formControlName="alb" placeholder="ALB">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="alp" class="form-label">ALP</label>
+                        <input type="text" class="form-control" id="alp" formControlName="alp" placeholder="ALP">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="alt" class="form-label">ALT</label>
+                        <input type="text" class="form-control" id="alt" formControlName="alt" placeholder="ALT">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="ast" class="form-label">AST</label>
+                        <input type="text" class="form-control" id="ast" formControlName="ast" placeholder="AST">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="bil" class="form-label">BIL</label>
+                        <input type="text" class="form-control" id="bil" formControlName="bil" placeholder="BIL">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="che" class="form-label">CHE</label>
+                        <input type="text" class="form-control" id="che" formControlName="che" placeholder="CHE">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="chol" class="form-label">CHOL</label>
+                        <input type="text" class="form-control" id="chol" formControlName="chol" placeholder="CHOL">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="crea" class="form-label">CREA</label>
+                        <input type="text" class="form-control" id="crea" formControlName="crea" placeholder="CREA">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="ggt" class="form-label">GGT</label>
+                        <input type="text" class="form-control" id="ggt" formControlName="ggt" placeholder="GGT">
+                    </div>
+
+                    <div class="mb-3 col-6">
+                        <label for="prot" class="form-label">PROT</label>
+                        <input type="text" class="form-control" id="prot" formControlName="prot" placeholder="PROT">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section2">
+                prediction results will be available soon
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

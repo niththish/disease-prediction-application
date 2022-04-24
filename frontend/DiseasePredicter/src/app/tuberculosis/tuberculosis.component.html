@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section1">
+                <form class="row">
+                   
+                    <p class="h5 text-center p-2 mb-3 bg-dark text-white">Tuberculosis Predicter</p>
+                    
+                    <div class="mb-3">
+                        <label for="tuberculosis" class="form-label">Tuberculosis</label>
+                        <input class="form-control" type="file" id="tuberculosis" (change) = "getFile($event)">
+                    </div>
+
+                    <img [src]="imageSrc || ''" id="image" alt="">
+                    <button type="submit" (click)="submitData()" class="btn btn-primary">Predict</button>
+                
+                </form>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row align-items-center justify-content-center" id="section2">
+                prediction results will be available soon
+            </div>
+        </div>
+        
+    </div>
+</div>
